@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #51bcdd80;
+  border-radius: 5px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: lightblue;
+  height: 100vh;
+  align-items: center;
+}
+.progress {
+  width: 100px;
+  height: 100px;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  background: #102d33;
+  text-align: center;
+  line-height: 100px;
+  margin: 20px;
+}
+.progress::after {
+  content: "%";
+}
+.progress .title {
+  position: relative;
+  z-index: 100;
+}
+.progress .overlay {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #102d33;
+}
+.progress .left,
+.progress .right {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 10px solid #05bfc4;
+  border-radius: 100px 0px 0px 100px;
+  border-right: 0;
+  transform-origin: right;
+}
+.animate5 {
+  animation: load1 1s linear forwards;
+}
+.animate10 {
+  animation: load2 1s linear forwards;
+}
+.animate15 {
+  animation: load3 1s linear forwards;
+}
+.animate20 {
+  animation: load4 1s linear forwards;
+}
+.animate35 {
+  animation: load5 1s linear forwards;
+}
+
+@keyframes load1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(18deg);
+  }
+}
+@keyframes load2 {
+  0% {
+    transform: rotate(18deg);
+  }
+  100% {
+    transform: rotate(36deg);
+  }
+}
+@keyframes load3 {
+  0% {
+    transform: rotate(36deg);
+  }
+  100% {
+    transform: rotate(54deg);
+  }
+}
+@keyframes load4 {
+  0% {
+    transform: rotate(54deg);
+  }
+  100% {
+    transform: rotate(72deg);
+  }
+}
+@keyframes load5 {
+  0% {
+    transform: rotate(72deg);
+  }
+  100% {
+    transform: rotate(136deg);
+  }
+}

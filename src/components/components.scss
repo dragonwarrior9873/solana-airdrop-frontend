@@ -1,0 +1,326 @@
+.pre-button-area {
+    position: absolute;
+    right: 20px;
+}
+
+.pre-button:hover {
+    cursor: pointer;
+}
+
+.pre-button {
+    display: flex;
+    height: 45px;
+    width: 186px;
+    box-shadow: inset 0 -2px 10px #fff6, inset 0 3px 0 #ffffff4d;
+    background: linear-gradient(0deg, #8d0af4, #ef127c 123.44%);
+    border-radius: 10px;
+    font-family: Inter, serif;
+    color: white;
+    /* height: 100%; */
+    padding: 1px;
+    /* width: 100%; */
+}
+
+.connect-wallet-btn {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.presale-btn button {
+    margin-bottom: 20px;
+}
+
+.presale-pay-input {
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.presale-pay-input-balance {
+    align-items: center;
+    color: gray;
+    font-size: 12px;
+}
+
+.presale-pay-input-balance .token-icon {
+    color: gray;
+}
+
+.presale-pay-input-balance .balance-img {
+    width: 14px;
+    height: 14px;
+}
+
+.presale-pay-input-title {
+    width: 100%;
+    line-height: normal;
+    justify-content: space-between;
+}
+
+.presale-pay-input-part {
+    width: 100%;
+    padding-left: 12px;
+    border: 1px solid #68F2C9;
+    border-radius: 32px;
+    box-sizing: border-box;
+    background: #08131799;
+    position: relative;
+    height: 41px;
+}
+
+.presale-pay-input-part input {
+    width: 100%;
+    margin: 0 4px;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+}
+
+.presale-pay-input-part input:focus {
+    border: none;
+    outline: none;
+}
+
+.presale-pay-input-part .dropdown-token-relative {
+    background: #08363F;
+    min-width: 82px;
+    /* height: auto; */
+    position: relative;
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
+    padding: 12px 8px;
+    box-sizing: border-box;
+    height: 95%;
+    cursor: pointer;
+}
+
+.dropdown-token-first {
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    z-index: 11;
+}
+
+.dropdown-token-list {
+    background-color: #0e4352;
+    border: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    left: -1px;
+    position: absolute;
+    top: 105%;
+    width: 101%;
+    z-index: 5;
+
+    display: block;
+    height: 135px;
+    margin-right: 10px;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+    border-bottom: 1px solid gray;
+
+}
+
+.dropdown-token {
+    background: #0e5162;
+    border: none;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+.dropdown-token-item {
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    gap: 4px;
+    justify-content: flex-start;
+    line-height: normal;
+    padding: 12px;
+    transition: all .3s ease-in-out;
+}
+
+.dropdown-token-item:hover {
+    background: #0e5162;
+}
+
+.dropdown-token:focus {
+    outline: none;
+}
+
+.dropdown-token-relative svg {
+    width: 16px;
+    height: 16px;
+}
+
+.presale-pay-input-tag {
+    border: none;
+    border-radius: 10px;
+    width: 90%;
+}
+
+.startin {
+    margin-bottom: 20px;
+}
+
+.startin-count {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.count-item {
+    flex-direction: column;
+}
+
+.count-item-segment {
+    width: 85px;
+    height: 85px;
+    align-items: center;
+    background-color: #231a51;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px 0 #0003;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 48px;
+}
+
+
+.flip-card {
+    border-radius: 0.1em;
+    display: inline-flex;
+    flex-direction: column;
+    /* font-family: Inter,serif; */
+    font-style: normal;
+    font-weight: 700;
+    position: relative;
+}
+
+.flip-card-top {
+    /* background-color: #0e5162; */
+    /* border-bottom: 1px solid #0000001a; */
+    border-top-left-radius: 0.1em;
+    border-top-right-radius: 0.1em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    height: 0.5em;
+    line-height: 1;
+    overflow: hidden;
+    /* padding: 0.25em; */
+    /* width: 50px; */
+}
+
+.flip-card-bottom {
+    align-items: flex-end;
+    /* background-color: #231a51; */
+    border-bottom-left-radius: 0.1em;
+    border-bottom-right-radius: 0.1em;
+    color: #c2c0ca;
+    display: flex;
+    justify-content: center;
+    padding-top: 2px;
+
+    height: 0.45em;
+    line-height: 1;
+    overflow: hidden;
+    /* padding: 0.25em; */
+}
+
+.price-box {
+    margin-bottom: 20px;
+}
+
+.price-box svg {
+    width: 16px;
+    height: 16px;
+}
+
+.price-box span {
+    /* font-family: Inter; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.price-box-img {
+    width: 16px;
+    height: 16px;
+}
+
+.coin-img {
+    width: 215px;
+    height: auto;
+}
+
+.access-box {
+    margin-bottom: 20px;
+}
+
+.buy-token-box {
+    flex-direction: column;
+}
+
+.token-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.buy-token-title {
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+}
+
+.buy-token-body {
+    width: 70%;
+    height: 51px;
+    background-color: #231a51;
+    border-radius: 10px;
+    box-shadow: inset 0 -2px 5px #fff6, inset 0 3px 0 #ffffff4d;
+}
+
+.buy-token-body:hover {
+    cursor: pointer;
+}
+
+
+
+// @media screen and (max-width: 1150px) {
+//     .description-part-header {
+//         margin-bottom: 10px;
+//         justify-content: center;
+//         align-items: center;
+//     }
+
+//     .description-part-header-title span {
+//         font-size: 76px;
+//         line-height: 76px;
+//         margin-top: 10px;
+//         justify-content: center;
+//         align-items: center;
+//     }
+
+//     .coin-img {
+//         width: 185px;
+//         height: auto;
+//         margin-bottom: 10px;
+//     }
+// }
+

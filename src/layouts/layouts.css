@@ -1,0 +1,16 @@
+
+.nav-box {
+    width: 100vw;
+    display: flex;
+    height: 80px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    z-index: 99;
+}
+
+.nav-box-content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
